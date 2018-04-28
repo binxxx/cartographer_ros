@@ -1,0 +1,28 @@
+<launch>
+  <arg name="laser"     default="velodyne32"/>
+  <arg name="bag_fn"    default="$(find inspect_bag)/dat/sec1/sensor_2017-02-26-09-35-41.bag"/>
+
+  <param name="use_sim_time" value="true"/> 
+  <node name="rosbag_play" pkg="rosbag" type="play" args="$(arg bag_fn) --clock --start 200" />
+
+  <!-- <param name="robot_description"
+    textfile="$(find cartographer_ros)/urdf/aria.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" /> -->
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename aria_dmb.lua"
+      output="screen">
+    <remap from="points2"   to="/velodyne_points" />
+    <remap from="imu"       to="/microstrain/imu"/>
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/aria_dmb.rviz" /> 
+
+</launch>

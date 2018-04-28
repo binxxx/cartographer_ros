@@ -1,0 +1,704 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /Global Options1
+        - /TF1/Tree1
+        - /matched_pointcloud1
+        - /matched_pointcloud1/Autocompute Value Bounds1
+      Splitter Ratio: 0.583333
+    Tree Height: 1081
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+      - /view01
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: false
+    Name: Time
+    SyncMode: 0
+    SyncSource: matched_pointcloud
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.5
+      Cell Size: 1
+      Class: rviz/Grid
+      Color: 160; 160; 164
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 100
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        0:
+          Value: false
+        1:
+          Value: false
+        10:
+          Value: false
+        100:
+          Value: false
+        101:
+          Value: false
+        102:
+          Value: false
+        103:
+          Value: false
+        104:
+          Value: false
+        105:
+          Value: false
+        106:
+          Value: false
+        107:
+          Value: false
+        108:
+          Value: false
+        109:
+          Value: false
+        11:
+          Value: false
+        12:
+          Value: false
+        13:
+          Value: false
+        14:
+          Value: false
+        15:
+          Value: false
+        16:
+          Value: false
+        17:
+          Value: false
+        18:
+          Value: false
+        19:
+          Value: false
+        2:
+          Value: false
+        20:
+          Value: false
+        21:
+          Value: false
+        22:
+          Value: false
+        23:
+          Value: false
+        24:
+          Value: false
+        25:
+          Value: false
+        26:
+          Value: false
+        27:
+          Value: false
+        28:
+          Value: false
+        29:
+          Value: false
+        3:
+          Value: false
+        30:
+          Value: false
+        31:
+          Value: false
+        32:
+          Value: false
+        33:
+          Value: false
+        34:
+          Value: false
+        35:
+          Value: false
+        36:
+          Value: false
+        37:
+          Value: false
+        38:
+          Value: false
+        39:
+          Value: false
+        4:
+          Value: false
+        40:
+          Value: false
+        41:
+          Value: false
+        42:
+          Value: false
+        43:
+          Value: false
+        44:
+          Value: false
+        45:
+          Value: false
+        46:
+          Value: false
+        47:
+          Value: false
+        48:
+          Value: false
+        49:
+          Value: false
+        5:
+          Value: false
+        50:
+          Value: false
+        51:
+          Value: false
+        52:
+          Value: false
+        53:
+          Value: false
+        54:
+          Value: false
+        55:
+          Value: false
+        56:
+          Value: false
+        57:
+          Value: false
+        58:
+          Value: false
+        59:
+          Value: false
+        6:
+          Value: false
+        60:
+          Value: false
+        61:
+          Value: false
+        62:
+          Value: false
+        63:
+          Value: false
+        64:
+          Value: false
+        65:
+          Value: false
+        66:
+          Value: false
+        67:
+          Value: false
+        68:
+          Value: false
+        69:
+          Value: false
+        7:
+          Value: false
+        70:
+          Value: false
+        71:
+          Value: false
+        72:
+          Value: false
+        73:
+          Value: false
+        74:
+          Value: false
+        75:
+          Value: false
+        76:
+          Value: false
+        77:
+          Value: false
+        78:
+          Value: false
+        79:
+          Value: false
+        8:
+          Value: false
+        80:
+          Value: false
+        81:
+          Value: false
+        82:
+          Value: false
+        83:
+          Value: false
+        84:
+          Value: false
+        85:
+          Value: false
+        86:
+          Value: false
+        87:
+          Value: false
+        88:
+          Value: false
+        89:
+          Value: false
+        9:
+          Value: false
+        90:
+          Value: false
+        91:
+          Value: false
+        92:
+          Value: false
+        93:
+          Value: false
+        94:
+          Value: false
+        95:
+          Value: false
+        96:
+          Value: false
+        97:
+          Value: false
+        98:
+          Value: false
+        99:
+          Value: false
+        All Enabled: false
+        base_frame:
+          Value: false
+        base_frame_view:
+          Value: false
+        laser_shaft:
+          Value: false
+        map:
+          Value: true
+        microstrain:
+          Value: true
+        motor_base:
+          Value: false
+        motor_shaft:
+          Value: false
+        submap:
+          Value: false
+        velodyne:
+          Value: false
+        world:
+          Value: false
+        world_view:
+          Value: false
+      Marker Scale: 20
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: false
+      Tree:
+        map:
+          submap:
+            {}
+        world:
+          0:
+            {}
+          1:
+            {}
+          10:
+            {}
+          100:
+            {}
+          101:
+            {}
+          102:
+            {}
+          103:
+            {}
+          104:
+            {}
+          105:
+            {}
+          106:
+            {}
+          107:
+            {}
+          108:
+            {}
+          109:
+            {}
+          11:
+            {}
+          12:
+            {}
+          13:
+            {}
+          14:
+            {}
+          15:
+            {}
+          16:
+            {}
+          17:
+            {}
+          18:
+            {}
+          19:
+            {}
+          2:
+            {}
+          20:
+            {}
+          21:
+            {}
+          22:
+            {}
+          23:
+            {}
+          24:
+            {}
+          25:
+            {}
+          26:
+            {}
+          27:
+            {}
+          28:
+            {}
+          29:
+            {}
+          3:
+            {}
+          30:
+            {}
+          31:
+            {}
+          32:
+            {}
+          33:
+            {}
+          34:
+            {}
+          35:
+            {}
+          36:
+            {}
+          37:
+            {}
+          38:
+            {}
+          39:
+            {}
+          4:
+            {}
+          40:
+            {}
+          41:
+            {}
+          42:
+            {}
+          43:
+            {}
+          44:
+            {}
+          45:
+            {}
+          46:
+            {}
+          47:
+            {}
+          48:
+            {}
+          49:
+            {}
+          5:
+            {}
+          50:
+            {}
+          51:
+            {}
+          52:
+            {}
+          53:
+            {}
+          54:
+            {}
+          55:
+            {}
+          56:
+            {}
+          57:
+            {}
+          58:
+            {}
+          59:
+            {}
+          6:
+            {}
+          60:
+            {}
+          61:
+            {}
+          62:
+            {}
+          63:
+            {}
+          64:
+            {}
+          65:
+            {}
+          66:
+            {}
+          67:
+            {}
+          68:
+            {}
+          69:
+            {}
+          7:
+            {}
+          70:
+            {}
+          71:
+            {}
+          72:
+            {}
+          73:
+            {}
+          74:
+            {}
+          75:
+            {}
+          76:
+            {}
+          77:
+            {}
+          78:
+            {}
+          79:
+            {}
+          8:
+            {}
+          80:
+            {}
+          81:
+            {}
+          82:
+            {}
+          83:
+            {}
+          84:
+            {}
+          85:
+            {}
+          86:
+            {}
+          87:
+            {}
+          88:
+            {}
+          89:
+            {}
+          9:
+            {}
+          90:
+            {}
+          91:
+            {}
+          92:
+            {}
+          93:
+            {}
+          94:
+            {}
+          95:
+            {}
+          96:
+            {}
+          97:
+            {}
+          98:
+            {}
+          99:
+            {}
+          base_frame:
+            base_frame_view:
+              {}
+            microstrain:
+              motor_base:
+                motor_shaft:
+                  laser_shaft:
+                    velodyne:
+                      {}
+          world_view:
+            {}
+      Update Interval: 0
+      Value: true
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Autocompute Value Bounds:
+        Max Value: 18.042
+        Min Value: -0.791208
+        Value: false
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 0; 170; 255
+      Color Transformer: AxisColor
+      Decay Time: 10
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 100
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: matched_pointcloud
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 2
+      Size (m): 0.01
+      Style: Points
+      Topic: /scan_matched_points2
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: true
+      Value: true
+    - Class: octomap_rviz_plugin/OccupancyGrid
+      Enabled: false
+      Max. Octree Depth: 16
+      Name: OccupancyGrid
+      Octomap Topic: /octomap_grid
+      Queue Size: 1
+      Value: false
+      Voxel Coloring: Z-Axis
+      Voxel Rendering: Occupied Voxels
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /constraint_list
+      Name: constrain_list
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/MarkerArray
+      Enabled: true
+      Marker Topic: /trajectory_node_list
+      Name: trajectory_node_list
+      Namespaces:
+        Trajectory 0: true
+      Queue Size: 100
+      Value: true
+    - Class: rviz/Marker
+      Enabled: false
+      Marker Topic: /distgrid_bbx
+      Name: distmap_bbx
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+    - Class: rviz/Axes
+      Enabled: false
+      Length: 1
+      Name: Axes
+      Radius: 0.1
+      Reference Frame: submap
+      Value: false
+    - Alpha: 1
+      Axes Length: 2
+      Axes Radius: 0.1
+      Class: rviz/Pose
+      Color: 255; 25; 0
+      Enabled: false
+      Head Length: 0.3
+      Head Radius: 0.1
+      Name: Pose
+      Shaft Length: 1
+      Shaft Radius: 0.05
+      Shape: Axes
+      Topic: /pose
+      Unreliable: false
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 255; 255; 255
+    Fixed Frame: map
+    Frame Rate: 50
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/XYOrbit
+      Distance: 125.134
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: 7.88328
+        Y: -4.22357
+        Z: 2.89503e-05
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.136515
+      Target Frame: map
+      Value: XYOrbit (rviz)
+      Yaw: 0.5985
+    Saved:
+      - Class: rviz/XYOrbit
+        Distance: 22.1068
+        Enable Stereo Rendering:
+          Stereo Eye Separation: 0.06
+          Stereo Focal Distance: 1
+          Swap Stereo Eyes: false
+          Value: false
+        Focal Point:
+          X: -2.48093
+          Y: 4.10697
+          Z: 6.67572e-06
+        Name: view0
+        Near Clip Distance: 0.01
+        Pitch: -0.744601
+        Target Frame: world
+        Value: XYOrbit (rviz)
+        Yaw: 5.93359
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1176
+  Hide Left Dock: false
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a0000047afc0200000010fb0000001200530065006c0065006300740069006f006e00000000410000009b0000006400fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc000000000000047a000000dd00fffffffa000000010100000002fb0000001e00780069006d00650061002f0069006d006100670065005f0072006100770000000000ffffffff0000000000000000fb000000100044006900730070006c00610079007301000000000000015e0000016a00fffffffb0000000a0049006d00610067006500000002d2000000b70000000000000000fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d00610067006500000002aa0000013c0000000000000000fb0000000a0049006d00610067006501000002b5000000c80000000000000000fb0000000a0049006d00610067006500000002a9000001150000000000000000fb0000000a0049006d0061006700650100000221000001680000000000000000fb0000000a0049006d0061006700650100000289000001000000000000000000fb0000000a0049006d0061006700650100000291000000f80000000000000000fb0000000a0049006d0061006700650200000b39000001e60000032300000275000000010000010f0000047afc0200000003fb0000000a0056006900650077007300000000000000047a000000b000fffffffb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b2000000000000000000000002000007470000012afc0100000005fb0000000a0049006d0061006700650200000809000001f00000033500000277fb00000014004c006500660074005f0049006d0061006700650100000000000001560000000000000000fb0000001600520069006700680074005f0049006d006100670065010000015c000001530000000000000000fb0000000e004600650061007400750072006501000002b5000001560000000000000000fb0000000a00560069006500770073030000004e00000080000002e10000019700000003000007800000003bfc0100000002fb0000000800540069006d0065000000000000000780000002f600fffffffb0000000800540069006d00650100000000000004500000000000000000000006100000047a00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730000000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1920
+  X: 1920
+  Y: 24

@@ -1,0 +1,26 @@
+<launch>
+  <arg name="laser"     default="velodyne32"/>
+
+  <param name="use_sim_time" value="false"/> 
+  <!-- <param name="robot_description"
+    textfile="$(find cartographer_ros)/urdf/aria.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" /> -->
+  <include file="$(find aria_launch)/launch/sensors.launch"/>
+    <param name="/encoderTfPublisher/spinnerSpeed" value="130"/>
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename aria_single.lua"
+      output="screen">
+    <remap from="points2"   to="/velodyne_points" />
+    <remap from="imu"       to="/microstrain/imu"/>
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+  <node pkg="tf" type="static_transform_publisher" name="map_world" args="0 0 0 0 0 0 /map /world 100"/>
+
+</launch>

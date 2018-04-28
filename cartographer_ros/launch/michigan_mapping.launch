@@ -1,0 +1,18 @@
+<launch>
+
+<!-- 	<arg name="bag_fn"    default="/home/aeroscout/Documents/michigan/test7.bag"/>
+ -->
+	<arg name="bag_fn"    default="/home/aeroscout/Documents/michigan_test9/mapping_test9.bag"/>
+
+	<param name="use_sim_time" value="true"/> 
+	<node name="rosbag_play" pkg="rosbag" type="play" args="$(arg bag_fn) --clock --start 0 --duration 8" />
+
+	<node pkg="tf" type="static_transform_publisher" name="world" args="0 0 0 0 0 0 /world /odom 100"/>
+	<node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+		<param name="resolution"  value="0.1"/>
+		<param name="frame_id" type="string" value="world"/>
+		<param name="sensor_model/max_range" value="15.0"/>
+		<remap from="cloud_in" to="/velodyne/strongestPointCloud"/>
+	</node>
+
+</launch>

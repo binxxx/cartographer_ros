@@ -1,0 +1,91 @@
+<robot name="Mikrokopter">
+  
+################################################################################
+# LINKS                                                                        #
+################################################################################
+
+ ##### base_frame ##############################################################
+  <link name="base_frame">
+    <collision>
+      <origin xyz="0 0 0.05" rpy="0 0 0"/>
+      <geometry>
+        <box size="1.2 1.2 0.6" />
+      </geometry>
+    </collision>
+  </link>
+
+ ##### base_footprint #########################################################
+
+ 
+  ##### imu #################################################
+  <link name="microstrain"/>
+  
+ ##### laser_links #################################################
+  <link name="motor_base"/>
+  <link name="motor_shaft"/>
+  <link name="laser_shaft"/>
+  <link name="velodyne"/>
+
+ ##### view frames #################################################
+  <link name="base_frame_view"/> 
+
+################################################################################
+# JOINTS                                                                       #
+################################################################################
+
+ 
+ ##### imu #################################################
+
+ <joint name="base_frame_to_imu" type="fixed">
+    <parent link="base_frame"/>
+    <child link="microstrain"/>
+    <!-- <origin xyz="0 0 0" rpy="0 0 3.1415926"/>-->
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+  
+
+ ##### motor_base #################################################
+
+ <joint name="imu_to_laser_motor_base" type="fixed">
+    <parent link="microstrain"/>
+    <child link="motor_base"/>
+    <!-- <origin xyz="0.0990 0.1415 -0.0095" rpy="3.1416 0.0000 0.0000"/>  -->
+    <origin xyz="0.2 0 0" rpy="0 0 0"/>
+  </joint>
+
+
+ ##### motor_shaft_spin #################################################
+  
+ <joint name="motor_shaft_spin" type="continuous">
+    <parent link="motor_base"/>
+    <child link="motor_shaft"/>
+    <axis xyz="-1 0 0"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+
+ ##### laser_shaft #################################################
+
+ <joint name="motor_shaft_to_laser_shaft" type="fixed">
+    <parent link="motor_shaft"/>
+    <child link="laser_shaft"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+ ##### laser #################################################
+  
+ <joint name="laser_shaft_to_laser" type="fixed">
+    <parent link="laser_shaft"/>
+    <child link="velodyne"/>
+    <!-- <origin xyz="0 0 0" rpy="0 0 -1.5546"/> -->
+    <origin xyz="0 0 0" rpy="0.005 0 -1.5465"/>
+  </joint>
+
+ ##### view frames #################################################
+  <joint name="base_frame_to_base_frame_view" type="fixed">
+    <parent link="base_frame"/>
+    <child link="base_frame_view"/>
+    <origin xyz="0 0 0" rpy="0 3.14159 0"/>
+  </joint>
+
+</robot>

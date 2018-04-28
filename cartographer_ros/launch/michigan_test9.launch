@@ -1,0 +1,25 @@
+<launch>
+  <arg name="laser"     default="velodyne32"/>
+  <arg name="bag_fn"    default="/home/aeroscout/Documents/michigan_test9/new_test9.bag"/>
+
+  <param name="use_sim_time" value="true"/> 
+  <node name="rosbag_play" pkg="rosbag" type="play" output="screen" args="$(arg bag_fn) --pause --clock --start 0 " />
+
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename michigan_test9.lua"
+      output="screen">
+    <remap from="points2"   to="/velodyne/strongestPointCloud" />
+    <remap from="imu"       to="/imu3dm/imu"/>
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/michigan.rviz" /> 
+  <!-- <node pkg="tf" type="static_transform_publisher" name="map_world" args="0 0 0 0 0 0 /map /world 100"/>
+  <node pkg="tf" type="static_transform_publisher" name="imu" args="0 0 0 0 0 0 /imu_link_ned /imu 100"/> -->
+  <node pkg="tf" type="static_transform_publisher" name="imu" args="0 0 0 1.5708 0 3.1416 /imu /velodyne 100"/>
+
+</launch>
