@@ -83,7 +83,7 @@ void MapBuilderBridge::FinishTrajectory(const int trajectory_id) {
 void MapBuilderBridge::RunFinalOptimization() {
   LOG(INFO) << "Running final trajectory optimization...";
   map_builder_.sparse_pose_graph()->RunFinalOptimization();
-  map_builder_.sparse_pose_graph_offline()->RunFinalOptimization();
+  // map_builder_.sparse_pose_graph_offline()->RunFinalOptimization();
 }
 void MapBuilderBridge::RunFinalOptimizationOffline() {
   LOG(INFO) << "Running final offline trajectory optimization...";

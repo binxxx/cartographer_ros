@@ -804,6 +804,7 @@ void Node::SerializeState(const string& filename) {
 }
 
 void Node::LoadMap(const std::string& map_filename) {
+  std::cout << "Load Map!!!" << std::endl;
   carto::common::MutexLocker lock(&mutex_);
   map_builder_bridge_.LoadMap(map_filename);
 }
