@@ -56,6 +56,7 @@ class MapBuilderBridge {
                     const TrajectoryOptions& trajectory_options);
   void FinishTrajectory(int trajectory_id);
   void RunFinalOptimization();
+  void RunFinalOptimizationOffline();
   void SerializeState(const string& filename);
 
   bool HandleSubmapQuery(

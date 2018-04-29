@@ -85,6 +85,11 @@ void MapBuilderBridge::RunFinalOptimization() {
   map_builder_.sparse_pose_graph()->RunFinalOptimization();
 }
 
+void MapBuilderBridge::RunFinalOptimizationOffline() {
+  LOG(INFO) << "Running final offline trajectory optimization...";
+  map_builder_.sparse_pose_graph()->RunFinalOptimization();
+}
+
 void MapBuilderBridge::SerializeState(const std::string& filename) {
   cartographer::io::ProtoStreamWriter writer(filename);
   map_builder_.SerializeState(&writer);
